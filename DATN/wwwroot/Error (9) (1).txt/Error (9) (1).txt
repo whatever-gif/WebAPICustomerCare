@@ -1,0 +1,186 @@
+ErridNDMSPlus.Mst_IssueVoucher_GetByIssueCodeSys_InvalidIssueCodeSys
+-----------------------------------------
+Exception result
+ErrorCode: 
+ErrorMessage: 
+-----------------------------------------
+Lst_c_K_DT_SysError: 
+Lst_c_K_DT_SysError: 
+Lst_c_K_DT_SysWarning: 
+-----------------------------------------
+Exception:
+Exception Lst_c_K_DT_SysInfo: 
+Exception Lst_c_K_DT_SysError: 
+Exception Lst_c_K_DT_SysWarning: 
+-----------------------------------------
+Exception TargetSite:
+-----------------------------------------
+Exception Exception:
+Debug information
+-----------------------------------------
+{
+  "message": "ErridNDMSPlus.Mst_IssueVoucher_GetByIssueCodeSys_InvalidIssueCodeSys",
+  "_strErrCode": "ErridNDMSPlus.Mst_IssueVoucher_GetByIssueCodeSys_InvalidIssueCodeSys",
+  "_strTId": "26c12cd4-eb9e-4956-808b-94334281fe1b",
+  "_strAppTId": "dc69a7c1-2736-4896-b6a0-61c1c1b3a73e",
+  "_objTTime": "2024-05-07 08:54:16.266",
+  "_strType": "MstIssueVoucherGetByIssueCodeSys",
+  "_dicDebug": {},
+  "_dicExcs": {
+    "Lst_c_K_DT_SysInfo": [
+      {
+        "Tid": "26c12cd4-eb9e-4956-808b-94334281fe1b",
+        "DigitalSignature": "",
+        "ErrorCode": "ErridNDMSPlus.Mst_IssueVoucher_GetByIssueCodeSys_InvalidIssueCodeSys",
+        "FlagWarning": "0",
+        "Remark": "",
+        "FlagCompress": "0",
+        "FlagEncrypt": "0"
+      }
+    ],
+    "Lst_c_K_DT_SysError": [
+      {
+        "PCode": "strControllerName",
+        "PVal": "MstIssueVoucherGetByIssueCodeSys"
+      },
+      {
+        "PCode": "dtimeSys",
+        "PVal": "2024-05-07 08:54:16"
+      },
+      {
+        "PCode": "Tid",
+        "PVal": "26c12cd4-eb9e-4956-808b-94334281fe1b"
+      },
+      {
+        "PCode": "AppTId",
+        "PVal": "dc69a7c1-2736-4896-b6a0-61c1c1b3a73e"
+      },
+      {
+        "PCode": "NetworkID",
+        "PVal": "7206207001"
+      },
+      {
+        "PCode": "OrgID",
+        "PVal": "7206207001"
+      },
+      {
+        "PCode": "AccessToken",
+        "PVal": "Bearer Z7boqFIcIdpzyrJaGR47migVlD5dDbDCNo_7EwsILrYjBHnw25-oZg0UKQYne7SjNIfsVePvkPdlqNwJAV4otdbiI2gRZyeRk3cH_PM5rZmB6M94mnOiu-5g_KiUMuBF0Q79aMwdWR_CH_mXIN9o3oKx1b-xXnzwn-nXDv4aDJSrbup8ubXIDBmR7_TWRHKxVGW_XcayCelJgSD8ODJizglZYaN1HazG5_9ss8vYXYO2Pn2CDv9O0iCGoSgpnfxa-PGO_qa3_LNxDv40y4G3eATHBVV4XAkbTv_6EYB2yqPZVSZfT-xlbZ95pt4p-Et3wpBQFT9eOG4tzDeQBVLGPWL8yHoiBVjYm7ZhndCMzXDR0UqCAfkDXFqEaFrOfcA-L5I1Km3jI4lornKitaazJr8qB97LD09u8Y_hurXaTUs"
+      },
+      {
+        "PCode": "IssueCodeSys",
+        "PVal": ""
+      },
+      {
+        "PCode": "strControllerName",
+        "PVal": "Sys_User_GetForCurrentUser"
+      },
+      {
+        "PCode": "dtimeSys",
+        "PVal": "2024-05-07 08:54:16"
+      },
+      {
+        "PCode": "strFunctionName",
+        "PVal": "Sys_User_GetForCurrentUser"
+      },
+      {
+        "PCode": "dtimeSys",
+        "PVal": "2024-05-07 01:54:16"
+      }
+    ],
+    "Lst_c_K_DT_SysWarning": []
+  }
+}
+ErridNDMSPlus.Mst_IssueVoucher_GetByIssueCodeSys_InvalidIssueCodeSys
+-----------------------------------------
+Exception result
+ErrorCode: 
+ErrorMessage: 
+-----------------------------------------
+Lst_c_K_DT_SysError: 
+Lst_c_K_DT_SysError: 
+Lst_c_K_DT_SysWarning: 
+-----------------------------------------
+Exception:
+Exception Lst_c_K_DT_SysInfo: 
+Exception Lst_c_K_DT_SysError: 
+Exception Lst_c_K_DT_SysWarning: 
+-----------------------------------------
+Exception TargetSite:
+-----------------------------------------
+Exception Exception:
+Debug information
+-----------------------------------------
+{
+  "message": "ErridNDMSPlus.Mst_IssueVoucher_GetByIssueCodeSys_InvalidIssueCodeSys",
+  "_strErrCode": "ErridNDMSPlus.Mst_IssueVoucher_GetByIssueCodeSys_InvalidIssueCodeSys",
+  "_strTId": "26c12cd4-eb9e-4956-808b-94334281fe1b",
+  "_strAppTId": "dc69a7c1-2736-4896-b6a0-61c1c1b3a73e",
+  "_objTTime": "2024-05-07 08:54:16.629",
+  "_strType": "MstIssueVoucherGetByIssueCodeSys",
+  "_dicDebug": {},
+  "_dicExcs": {
+    "Lst_c_K_DT_SysInfo": [
+      {
+        "Tid": "26c12cd4-eb9e-4956-808b-94334281fe1b",
+        "DigitalSignature": "",
+        "ErrorCode": "ErridNDMSPlus.Mst_IssueVoucher_GetByIssueCodeSys_InvalidIssueCodeSys",
+        "FlagWarning": "0",
+        "Remark": "",
+        "FlagCompress": "0",
+        "FlagEncrypt": "0"
+      }
+    ],
+    "Lst_c_K_DT_SysError": [
+      {
+        "PCode": "strControllerName",
+        "PVal": "MstIssueVoucherGetByIssueCodeSys"
+      },
+      {
+        "PCode": "dtimeSys",
+        "PVal": "2024-05-07 08:54:16"
+      },
+      {
+        "PCode": "Tid",
+        "PVal": "26c12cd4-eb9e-4956-808b-94334281fe1b"
+      },
+      {
+        "PCode": "AppTId",
+        "PVal": "dc69a7c1-2736-4896-b6a0-61c1c1b3a73e"
+      },
+      {
+        "PCode": "NetworkID",
+        "PVal": "7206207001"
+      },
+      {
+        "PCode": "OrgID",
+        "PVal": "7206207001"
+      },
+      {
+        "PCode": "AccessToken",
+        "PVal": "Bearer Z7boqFIcIdpzyrJaGR47migVlD5dDbDCNo_7EwsILrYjBHnw25-oZg0UKQYne7SjNIfsVePvkPdlqNwJAV4otdbiI2gRZyeRk3cH_PM5rZmB6M94mnOiu-5g_KiUMuBF0Q79aMwdWR_CH_mXIN9o3oKx1b-xXnzwn-nXDv4aDJSrbup8ubXIDBmR7_TWRHKxVGW_XcayCelJgSD8ODJizglZYaN1HazG5_9ss8vYXYO2Pn2CDv9O0iCGoSgpnfxa-PGO_qa3_LNxDv40y4G3eATHBVV4XAkbTv_6EYB2yqPZVSZfT-xlbZ95pt4p-Et3wpBQFT9eOG4tzDeQBVLGPWL8yHoiBVjYm7ZhndCMzXDR0UqCAfkDXFqEaFrOfcA-L5I1Km3jI4lornKitaazJr8qB97LD09u8Y_hurXaTUs"
+      },
+      {
+        "PCode": "IssueCodeSys",
+        "PVal": ""
+      },
+      {
+        "PCode": "strControllerName",
+        "PVal": "Sys_User_GetForCurrentUser"
+      },
+      {
+        "PCode": "dtimeSys",
+        "PVal": "2024-05-07 08:54:16"
+      },
+      {
+        "PCode": "strFunctionName",
+        "PVal": "Sys_User_GetForCurrentUser"
+      },
+      {
+        "PCode": "dtimeSys",
+        "PVal": "2024-05-07 01:54:16"
+      }
+    ],
+    "Lst_c_K_DT_SysWarning": []
+  }
+}

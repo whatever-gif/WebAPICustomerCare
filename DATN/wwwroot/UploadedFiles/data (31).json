@@ -1,0 +1,33 @@
+{
+  "Thời gian": "EffDTime: 2024-04-19 -> 2025-04-19",
+  "Tháng": "Months: null",
+  "Ngày": "Days: null",
+  "Thứ": "DaysOfWeek: null",
+  "Giờ": "Hours: null",
+  "Cờ sinh nhật": "FlagBirthDayEffType: 0",
+  "Cờ tất cả chi nhánh": "TargetOrg: 1",
+  "Cờ tất cả người tạo đơn hàng": "TargetCreateBy: 1",
+  "Cờ tất cả khách hàng": "TargetGroupCustomer: 1",
+  "Chọn chi nhánh": "Lst_org: ",
+  "Chọn người tạo": "Lst_createBy: ",
+  "Chọn nhóm KH": "Lst_groupCode: ",
+  "Mã chương trình": "PRMCode: PRMCODESYS.E3B.00019",
+  "Tên chương trình": "PRMName: d",
+  "Ngân sách": "BudgetVal: undefined",
+  "Ghi chú": "Remark: null",
+  "Cờ không áp dụng dồn": "FlagParallel: 0",
+  "Khuyến mại theo": "PRMMainType: 2 - Hàng hóa",
+  "Hình thức khuyến mại": "PRMPrdType: 1 - Tặng hàng",
+  "Cờ nhận khuyến mại": "FlagMulti: 0",
+  "Chi tiết khuyến mại": [
+    {
+      "Lst_BuyProduct": [
+        "0E3008GM000VVFF"
+      ],
+      "Qty": 0,
+      "Price": 0,
+      "Lst_PrmProduct": [],
+      "QtyPrm": 0
+    }
+  ]
+}

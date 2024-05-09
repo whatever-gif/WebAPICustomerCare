@@ -1,0 +1,148 @@
+{
+    "strJson": {
+        "PRMCodeSys": "PRMCODESYS.E56.00328",
+        "NetworkID": "7206207001",
+        "OrgID": "7206207001",
+        "PRMCode": "PRMCODESYS.E56.00328",
+        "PRMMainType": "PRODUCT",
+        "PRMPrdType": "PRODUCT",
+        "PRMName": "PRMCODESYS.E56.00327",
+        "BudgetVal": 123,
+        "EffDTimeStart": "2024-05-06 15:11:33",
+        "EffDTimeEnd": "2025-05-06 00:00:00",
+        "FlagParallel": "1",
+        "FlagMulti": "0",
+        "FlagAllOrg": "0",
+        "FlagAllUserCode": "0",
+        "FlagAllCustomerGrp": "0",
+        "FlagAllMonth": "0",
+        "FlagAllDay": "0",
+        "FlagAllDayOfWeek": "0",
+        "FlagAllTime": "0",
+        "FlagAllBirthDay": "1",
+        "BirthDayEffType": null,
+        "Remark": null
+    },
+    "strJsonPrm_PromotionMain": [{
+            "PRMCodeSys": "PRMCODESYS.E56.00328",
+            "OrgID": "7206207001",
+            "Idx": 0,
+            "Qty": 1,
+            "Amount": 2,
+            "TotalValOrd": null,
+            "CurrencyCode": "VND",
+            "ExchangeRate": "1",
+            "MapIdx": null
+        }
+    ],
+    "strJsonPrm_PromotionMainSpec": [{
+            "PRMCodeSys": "PRMCODESYS.E56.00328",
+            "Idx": 0,
+            "OrgID": "7206207001",
+            "RefCode": "0E3008GM000VVT1",
+            "RefType": "PRODUCT",
+            "MapIdx": null
+        }
+    ],
+    "strJsonPrm_PromotionPrm": [{
+            "Idx": 0,
+            "OrgID": "7206207001",
+            "Qty": 3,
+            "CurrencyCode": "VND",
+            "ExchangeRate": "1",
+            "UPDc": null,
+            "UPDcMax": null,
+            "UPRateDc": null,
+            "MapIdx": null
+        }
+    ],
+    "strJsonPrm_PromotionPrmSpec": [{
+            "PRMCodeSys": "PRMCODESYS.E56.00328",
+            "Idx": 0,
+            "OrgID": "7206207001",
+            "RefCode": "0E3008GM000VVCP",
+            "RefType": "PRODUCT",
+            "MapIdx": null
+        }
+    ],
+    "strJsonPrm_MonthScope": [{
+            "PRMCodeSys": "PRMCODESYS.E56.00328",
+            "Month": "03",
+            "OrgID": "7206207001"
+        }, {
+            "PRMCodeSys": "PRMCODESYS.E56.00328",
+            "Month": "01",
+            "OrgID": "7206207001"
+        }, {
+            "PRMCodeSys": "PRMCODESYS.E56.00328",
+            "Month": "04",
+            "OrgID": "7206207001"
+        }
+    ],
+    "strJsonPrm_DayScope": [{
+            "PRMCodeSys": "PRMCODESYS.E56.00328",
+            "Day": "03",
+            "OrgID": "7206207001"
+        }, {
+            "PRMCodeSys": "PRMCODESYS.E56.00328",
+            "Day": "02",
+            "OrgID": "7206207001"
+        }, {
+            "PRMCodeSys": "PRMCODESYS.E56.00328",
+            "Day": "04",
+            "OrgID": "7206207001"
+        }
+    ],
+    "strJsonPrm_DayOfWeekScope": [{
+            "PRMCodeSys": "PRMCODESYS.E56.00328",
+            "DayOfWeek": "2",
+            "OrgID": "7206207001"
+        }, {
+            "PRMCodeSys": "PRMCODESYS.E56.00328",
+            "DayOfWeek": "5",
+            "OrgID": "7206207001"
+        }
+    ],
+    "strJsonPrm_TimeScope": [{
+            "PRMCodeSys": "PRMCODESYS.E56.00328",
+            "TimeStart": "2",
+            "TimeEnd": "2",
+            "OrgID": "7206207001"
+        }, {
+            "PRMCodeSys": "PRMCODESYS.E56.00328",
+            "TimeStart": "0",
+            "TimeEnd": "0",
+            "OrgID": "7206207001"
+        }, {
+            "PRMCodeSys": "PRMCODESYS.E56.00328",
+            "TimeStart": "3",
+            "TimeEnd": "3",
+            "OrgID": "7206207001"
+        }, {
+            "PRMCodeSys": "PRMCODESYS.E56.00328",
+            "TimeStart": "12",
+            "TimeEnd": "12",
+            "OrgID": "7206207001"
+        }
+    ],
+    "strJsonPrm_OrgScope": [{
+            "PRMCodeSys": "PRMCODESYS.E56.00328",
+            "OrgID": "8014555000"
+        }, {
+            "PRMCodeSys": "PRMCODESYS.E56.00328",
+            "OrgID": "8099618000"
+        }
+    ],
+    "strJsonPrm_CustomerGroupScope": [{
+            "PRMCodeSys": "PRMCODESYS.E56.00328",
+            "CustomerGrpCode": "KHACHHANGVIP",
+            "OrgID": "7206207001"
+        }
+    ],
+    "strJsonPrm_UserScope": [{
+            "PRMCodeSys": "PRMCODESYS.E56.00328",
+            "UserCode": "0317844394@INOS.VN",
+            "OrgID": "7206207001"
+        }
+    ]
+}

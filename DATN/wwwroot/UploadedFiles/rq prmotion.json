@@ -1,0 +1,12 @@
+strJson: {"PRMCodeSys":"PRMCODESYS.E3B.00019","NetworkID":7206207001,"OrgID":7206207001,"PRMCode":"PRMCODESYS.E3B.00019","PRMMainType":"PRODUCT","PRMPrdType":"PRODUCT","PRMName":"1","BudgetVal":1,"EffDTimeStart":"2024-04-20 11:41:26","EffDTimeEnd":"2025-04-20 00:00:00","FlagParallel":"0","FlagMulti":"0","FlagAllOrg":"1","FlagAllUserCode":"1","FlagAllCustomerGrp":"1","FlagAllMonth":"1","FlagAllDay":"1","FlagAllDayOfWeek":"1","FlagAllTime":"1","FlagAllBirthDay":"0","BirthDayEffType":"DAY","Remark":"1"}
+strJsonPrm_PromotionMain: [{"PRMCodeSys":"PRMCODESYS.E3B.00019","Idx":0,"NetworkID":7206207001,"Qty":10,"Amount":2,"TotalValOrd":null,"CurrencyCode":"VND","ExchangeRate":"1","MapIdx":null}]
+strJsonPrm_PromotionMainSpec: [{"PRMCodeSys":"PRMCODESYS.E3B.00019","Idx":0,"OrgID":7206207001,"RefCode":"0E3008GM000VVCP","RefType":"PRODUCT","MapIdx":null}]
+strJsonPrm_PromotionPrm: [{"Idx":0,"OrgID":7206207001,"Qty":3,"CurrencyCode":"VND","ExchangeRate":"1"}]
+strJsonPrm_PromotionPrmSpec: [{"PRMCodeSys":"PRMCODESYS.E3B.00019","Idx":0,"OrgID":7206207001,"RefCode":"0E3008GM000VVTT","RefType":"PRODUCT","MapIdx":null}]
+strJsonPrm_MonthScope: []
+strJsonPrm_DayScope: []
+strJsonPrm_DayOfWeekScope: []
+strJsonPrm_TimeScope: []
+strJsonPrm_OrgScope: []
+strJsonPrm_CustomerGroupScope: []
+strJsonPrm_UserScope: []
