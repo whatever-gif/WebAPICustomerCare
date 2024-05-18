@@ -26,28 +26,6 @@ builder.Services.Configure<ApiBehaviorOptions>(options =>
     options.SuppressModelStateInvalidFilter = true;
 });
 
-builder.Services.AddIdentity<IdentityUser, IdentityRole>()
-       .AddEntityFrameworkStores<QuanTriHeThongContext>()
-       .AddDefaultTokenProviders();
-
-builder.Services.AddAuthentication(x =>
-{
-    x.DefaultAuthenticateScheme = JwtBearerDefaults.AuthenticationScheme;
-    x.DefaultChallengeScheme = JwtBearerDefaults.AuthenticationScheme;
-})
-.AddJwtBearer(x =>                                      
-{
-    x.RequireHttpsMetadata = false;
-    x.SaveToken = true;
-    x.TokenValidationParameters = new TokenValidationParameters
-    {
-        ValidateIssuerSigningKey = true,
-        IssuerSigningKey = new SymmetricSecurityKey(Encoding.ASCII.GetBytes(configuration["Jwt:Key"])),
-        ValidateIssuer = false,
-        ValidateAudience = false
-    };
-});
-
 // config cors
 builder.Services.AddCors(options =>
 {
@@ -66,7 +44,7 @@ builder.Services.AddSwaggerGen();
 // Setup DbContext for me
 builder.Services.AddDbContext<QuanTriHeThongContext>(options =>
 {
-    options.UseSqlServer(builder.Configuration.GetConnectionString("Server=(local)\\SQLSV2019EXP;Database=QuanTriHeThong;Trusted_Connection=True;TrustServerCertificate=True;User ID=sa;pwd=SqlSv2019"));
+    options.UseSqlServer(builder.Configuration.GetConnectionString("Server=(local)\\SQLSV2019EXP;Database=QuanTriHeThong;Trusted_Connection=True;TrustServerCertificate=True;Integrated Security=True;"));
 });
 
 
