@@ -25,5 +25,8 @@ public partial class NguoiDung
 
 }
 
+public partial class CapNhatMatKhau : NguoiDung
+{
+    public string MatKhauMoi { get; set; } = null!;
 
-
+}

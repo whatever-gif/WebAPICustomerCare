@@ -307,7 +307,7 @@ namespace DATN.Controllers
 
             if (string.IsNullOrEmpty(maKhachHang))
             {
-                response.Success = true;
+                response.Success = false;
                 return response;
             }
 
@@ -576,6 +576,29 @@ namespace DATN.Controllers
                     response.Success = true;
                 }
 
+            }
+            catch (Exception ex)
+            {
+                response.Error = ex.Message;
+            }
+
+            return response;
+        }
+
+        // Tìm kiếm khách hàng active
+        [HttpPost("getActive")]
+        [Consumes("application/x-www-form-urlencoded")]
+        public async Task<ActionResult<Response<KhachHang>>> TimKiemKhachHangHoatDong()
+        {
+            var response = new Response<KhachHang>();
+            try
+            {
+                var list = await _context.KhachHang.FromSqlRaw("EXEC TimKiemKhachHangHoatDong"
+                ).ToListAsync();
+
+                response.DataList = list;
+                response.Count = list.Count;
+                response.Success = true;
             }
             catch (Exception ex)
             {

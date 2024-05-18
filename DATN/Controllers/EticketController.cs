@@ -810,5 +810,97 @@ namespace DATN.Controllers
             }
         }
 
+
+        // Báo cáo KPI Eticket
+        [HttpPost("reportKPI")]
+        [Consumes("application/x-www-form-urlencoded")]
+        public async Task<ActionResult<Response<BaoCaoKPIEticket>>> BaoCaoKPI([FromForm] IFormCollection form)
+        {
+
+            var response = new Response<BaoCaoKPIEticket>();
+
+            Microsoft.Extensions.Primitives.StringValues nguoiTaoValues;
+            Microsoft.Extensions.Primitives.StringValues maPhanLoaiTicketValues;
+            Microsoft.Extensions.Primitives.StringValues thoiGianTaoTuValues;
+            Microsoft.Extensions.Primitives.StringValues thoiGianTaoDenValues;
+
+
+            string nguoiTao = "";
+            string maPhanLoaiTicket = "";
+            string? thoiGianTaoTu = "" == "" ? null : "";
+            string? thoiGianTaoDen = "" == "" ? null : "";
+
+            form.TryGetValue("NguoiTao", out nguoiTaoValues);
+            if (nguoiTaoValues.Count > 0)
+            {
+                nguoiTao = nguoiTaoValues[0] ?? "";
+            }
+
+            form.TryGetValue("MaPhanLoaiTicket", out maPhanLoaiTicketValues);
+            if (maPhanLoaiTicketValues.Count > 0)
+            {
+                maPhanLoaiTicket = maPhanLoaiTicketValues[0] ?? "";
+            }
+
+            form.TryGetValue("ThoiGianTaoTu", out thoiGianTaoTuValues);
+            if (thoiGianTaoTuValues.Count > 0)
+            {
+                DateTime temp;
+
+                if (thoiGianTaoTuValues[0] == "" || DateTime.TryParse(thoiGianTaoTuValues[0], out temp))
+                {
+                    thoiGianTaoTu = thoiGianTaoTuValues[0];
+                }
+                else
+                {
+                    return Utils.Utils.ReturnErrorResponse<BaoCaoKPIEticket>("Thời gian tạo từ không hợp lệ!", null);
+                }
+            }
+
+            form.TryGetValue("ThoiGianTaoDen", out thoiGianTaoDenValues);
+            if (thoiGianTaoDenValues.Count > 0)
+            {
+                DateTime temp;
+                if (thoiGianTaoDenValues[0] == "" || DateTime.TryParse(thoiGianTaoDenValues[0], out temp))
+                {
+                    thoiGianTaoDen = thoiGianTaoDenValues[0];
+                }
+                else
+                {
+                    return Utils.Utils.ReturnErrorResponse<BaoCaoKPIEticket>("Thời gian tạo đến không hợp lệ!", null);
+                }
+            }
+
+
+            try
+            {
+                var list = await _context.BaoCaoKPIEticket.FromSqlRaw("EXEC BaoCaoKPI @NguoiTao, @MaPhanLoaiTicket, @ThoiGianTaoTu, @ThoiGianTaoDen",
+                        new SqlParameter("@NguoiTao", nguoiTao),
+                        new SqlParameter("@MaPhanLoaiTicket", maPhanLoaiTicket),
+                        new SqlParameter("@ThoiGianTaoTu", string.IsNullOrEmpty(thoiGianTaoTu) ? (object)DBNull.Value : thoiGianTaoTu),
+                        new SqlParameter("@ThoiGianTaoDen", string.IsNullOrEmpty(thoiGianTaoDen) ? (object)DBNull.Value : thoiGianTaoDen)
+                        ).ToListAsync();
+
+                response.DataList = list;
+                response.Count = list.Count;
+                response.Error = null;
+                response.Success = true;
+            }
+            catch (Exception ex)
+            {
+                response.Error = ex;
+                response.Success = false;
+                return new Response<BaoCaoKPIEticket>
+                {
+                    DataList = new List<BaoCaoKPIEticket>(),
+                    Count = 0,
+                    Error = ex.Message,
+                    Success = false
+                };
+            }
+
+            return response;
+
+        }
     }
 }

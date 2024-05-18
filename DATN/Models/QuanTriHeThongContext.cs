@@ -29,6 +29,7 @@ public partial class QuanTriHeThongContext : DbContext
     public virtual DbSet<Eticket> Eticket { get; set; }
     public virtual DbSet<KhachHang> KhachHang { get; set; }
     public virtual DbSet<QuaTrinhXuLyEticket> QuaTrinhXuLyEticket { get; set; }
+    public virtual DbSet<BaoCaoKPIEticket> BaoCaoKPIEticket { get; set; }
 
 
     protected override void OnConfiguring(DbContextOptionsBuilder optionsBuilder)
@@ -349,6 +350,11 @@ public partial class QuanTriHeThongContext : DbContext
                 .HasColumnName("ThoiGianXuLy");
             entity.Property(e => e.TenNguoiXuLy)
                 .HasColumnName("TenNguoiXuLy");
+        });
+
+        modelBuilder.Entity<BaoCaoKPIEticket>(entity =>
+        {
+            entity.HasNoKey();
         });
 
 

@@ -12,6 +12,7 @@ public partial class QuaTrinhXuLyEticket
     public DateTime ThoiGianXuLy { get; set; }
     public string TenNguoiXuLy { get; set; } = null!;
     public string TrangThai { get; set; } = null!;
+    public string Avatar { get; set; } = null!;
 
 }
 

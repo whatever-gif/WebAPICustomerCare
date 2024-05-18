@@ -50,12 +50,6 @@ public partial class EticketSearch
     public string NguoiTao { get; set; }
 }
 
-public partial class EticketUpdate
-{
-    public string MaTicket { get; set; }
-    public string NguoiCapNhat { get; set; }
-}
-
 public partial class ThongTinEticket
 {
     // Khởi tạo đối tượng Eticket
@@ -67,3 +61,15 @@ public partial class ThongTinEticket
 }
 
 
+public partial class BaoCaoKPIEticket
+{
+    public string NguoiTao { get; set; }
+    public string TenNguoiDung { get; set; }
+    public string MaPhanLoaiTicket { get; set; }
+    public string TenPhanLoaiTicket { get; set; }
+    public int SoLuongTicket { get; set; }
+    public int SoLuongTicketSolved { get; set; }
+    public int SoLuongTicketClosed { get; set; }
+    public decimal TyLeDapUng { get; set; }
+
+}
